@@ -1,0 +1,65 @@
+<!-- Start -->
+<div class="body" style="width:50%;height:50%;margin-top:10%;margin-left:25%;">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <!-- Header start -->
+                <div class="card-header">
+                    <strong>Login</strong>
+                </div>
+                <!-- Header end -->
+                <form [formGroup]="form" >
+                    <!-- Body start -->
+                    <div class="card-body" style="margin-left:20%;">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="row">
+                                    <!-- UserName start -->
+                                    <div class="col-md-12">
+                                        <label for=""> User Name :</label><span class="requried-field">*</span>
+                                        <input class="form-control" formControlName="username"
+                                            placeholder="User Name" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('username')?.touched !! && this.form.get('username')?.errors">
+                                            UserName Required
+                                        </div>
+                                    </div>
+                                    <!-- UserName end -->
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <!-- Password start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for=""> Password :</label><span class="requried-field">*</span>
+                                        <input type="password" class="form-control" formControlName="password"
+                                            placeholder="Password" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('password')?.touched !! && this.form.get('password')?.errors">
+                                            Password Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Password end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Body end-->
+                </form>
+                <!-- Footer start -->
+                <div class="card-footer ">
+                    <div style="margin-left:75%">
+                        <button class="btn btn-sm btn-primary" (click)="onSubmit(form.value)">
+                            Login
+                        </button> &nbsp;
+                        <button class="btn btn-sm btn-danger" [routerLink]="['/']">
+                            Back
+                        </button>
+                    </div>
+                </div>
+                <!-- Footer end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End -->

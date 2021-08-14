@@ -1,0 +1,118 @@
+<!-- Start -->
+<div class="body" style="width:50%;height:50%;margin-top:10%;margin-left:25%;">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <!-- Header start -->
+                <div class="card-header">
+                    <strong>Register</strong>
+                </div>
+                <!-- Header end -->
+                <form [formGroup]="form">
+                    <!-- Body start -->
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <!-- UserName start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> User Name </label><span>*</span>
+                                        <input class="form-control" formControlName="username"
+                                            placeholder="User Name" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('username')?.touched !! && this.form.get('username')?.errors">
+                                            User Name Required
+                                        </div>
+                                    </div>
+                                    <!-- UserName end -->
+                                </div>
+                                <!-- Name start-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> Name</label><span>*</span>
+                                        <input class="form-control" formControlName="name" placeholder="Name" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('name')?.touched !! && this.form.get('name')?.errors">
+                                            Name Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Name end-->
+                            </div>
+                            <!-- Password start -->
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> Password </label><span>*</span>
+                                        <input type="password" class="form-control" formControlName="password"
+                                            placeholder="Password" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('password')?.touched !! && this.form.get('password')?.errors">
+                                            Password Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Password end -->
+                                <!-- Address start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> Address </label><span>*</span>
+                                        <textarea class="form-control" formControlName="address"
+                                            placeholder="Address"></textarea>
+                                        <div class="error"
+                                            *ngIf="this.form.get('address')?.touched !! && this.form.get('address')?.errors">
+                                            Address Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Address end -->
+                            </div>
+
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <!-- Email start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> Email </label><span>*</span>
+                                        <input class="form-control" formControlName="email" placeholder="Email" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('email')?.touched !! && this.form.get('email')?.errors">
+                                            Email Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Email end -->
+                                <!-- Phone Number start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label> Phone Number </label><span>*</span>
+                                        <input class="form-control" type="number" formControlName="phone"
+                                            placeholder="Phone" />
+                                        <div class="error"
+                                            *ngIf="this.form.get('phone')?.touched !! && this.form.get('phone')?.errors">
+                                            Phone Number Required
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Phone Number start -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Body end -->
+                <!-- Footer start -->
+                <div class="card-footer">
+                    <div style="margin-left:75%">
+                        <button class="btn btn-sm btn-primary" (click)="onSubmit(form.value)">
+                            Register
+                        </button> &nbsp;
+                        <button class="btn btn-sm btn-danger" [routerLink]="['/']">
+                            Back
+                        </button>
+                    </div>
+                </div>
+                <!-- Footer end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End -->

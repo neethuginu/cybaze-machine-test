@@ -1,0 +1,49 @@
+{
+  "datas": [
+    {
+      "username": "achus",
+      "password": "123",
+      "name": "achu",
+      "email": "achu@gmail.com",
+      "address": "jhjhjg",
+      "phone": 6566,
+      "id": "5d484d03-5280-45b7-a562-6886c49c81f2"
+    },
+    {
+      "username": "anus",
+      "password": "123",
+      "name": "anu",
+      "email": "anu@gmail.com",
+      "address": "nbhjj",
+      "phone": 45887842121,
+      "id": "a7e02d1b-c85a-423b-a91c-7951f1f7ac8c"
+    },
+    {
+      "username": "ammus",
+      "password": "123",
+      "name": "ammu",
+      "email": "ammus@gmail.com",
+      "address": "hghjgj",
+      "phone": 665654,
+      "id": "2c360a62-3301-446c-a78d-74ff47977bc7"
+    },
+    {
+      "username": "aryas",
+      "password": "12345",
+      "name": "arya",
+      "email": "arya@gmail.com",
+      "address": "jghghj",
+      "phone": 154545,
+      "id": "152db7f8-823e-4d7d-85b2-b522dde8f97e"
+    },
+    {
+      "username": "arya",
+      "password": "123",
+      "name": "aryas",
+      "email": "hjghjgh@gmail.com",
+      "address": "jhjgjhg",
+      "phone": 3645454,
+      "id": "39cf143e-3e6b-45b5-8e66-6d4947cce9f8"
+    }
+  ]
+}
